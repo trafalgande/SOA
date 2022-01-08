@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SOA.iml" filepath="$PROJECT_DIR$/.idea/SOA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soa-1/soa-1.iml" filepath="$PROJECT_DIR$/soa-1/soa-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soa-2/soa-2.iml" filepath="$PROJECT_DIR$/soa-2/soa-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soa-parent/soa-common/soa-common.iml" filepath="$PROJECT_DIR$/soa-parent/soa-common/soa-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soa-parent/soa-parent.iml" filepath="$PROJECT_DIR$/soa-parent/soa-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stateless-ejb/stateless-ejb.iml" filepath="$PROJECT_DIR$/stateless-ejb/stateless-ejb.iml" />
+    </modules>
+  </component>
+</project>

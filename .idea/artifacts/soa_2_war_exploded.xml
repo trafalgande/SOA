@@ -1,0 +1,49 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="soa-2:war exploded">
+    <output-path>$PROJECT_DIR$/soa-2/target/soa-2-1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>soa-2</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="soa-2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="soa-common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="soa-common" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
+          <element id="library" level="project" name="Maven: se.ifmo.pepe:soa-client-libs:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-client:2.25.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-common:2.25.1" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.25.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.5.0-b32" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.5.0-b32" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b32" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2.external:javax.inject:2.5.0-b32" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-locator:2.5.0-b32" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.0" />
+          <element id="library" level="project" name="Maven: javax.ejb:javax.ejb-api:3.2.2" />
+          <element id="library" level="project" name="Maven: javax.transaction:javax.transaction-api:1.3" />
+          <element id="archive" name="stateless-ejb-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="stateless-ejb" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/soa-2/target/soa-2-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="soa-2/web/Web" />
+    </root>
+  </artifact>
+</component>

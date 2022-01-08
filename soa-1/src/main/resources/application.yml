@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/soa
+    driver-class-name: org.postgresql.Driver
+    username: user
+    password: user
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
+  ssl:
+    enabled: true
+    key-store: /Users/aleksey.chaika/Desktop/wildfly-18.0.1.Final/standalone/configuration/server.keystore
+    key-alias: localhost
+    key-store-password: secret
+    key-password: secret
+
+---
+spring:
+  application:
+    name: soa-service-a
+  config:
+    import: "optional:consul:"
+  cloud:
+    consul:
+      config:
+        enabled: true
+        format: yaml
+      host: localhost
+      port: 8500
+      discovery:
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        health-check-tls-skip-verify: true
+        health-check-url: https://192.168.0.101:${server.port}/actuator/health
+        acl-token: {lmao-xd}
